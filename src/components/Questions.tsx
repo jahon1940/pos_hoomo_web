@@ -12,11 +12,7 @@ const Questions = () => {
   return (
     <section className="py-10 md:py-15 bg-white">
       <Marquee className="text-black text-xl md:text-3xl mb-10">
-        Bepul yordam va qo'llab-quvvatlash • Bepul yordam va qo'llab-quvvatlash
-        • Bepul yordam va qo'llab-quvvatlash • Bepul yordam va
-        qo'llab-quvvatlash • Bepul yordam va qo'llab-quvvatlash • Bepul yordam
-        va qo'llab-quvvatlash • Bepul yordam va qo'llab-quvvatlash • Bepul
-        yordam va qo'llab-quvvatlash •
+        {t("questions.marquee")}
       </Marquee>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
