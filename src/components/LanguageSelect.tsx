@@ -66,6 +66,7 @@ const LanguageSelect = () => {
       borderRadius: '8px',
       boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)',
       marginTop: '4px',
+      right: "0px",
       zIndex: 9999,
       minWidth: '120px',
       width: 'auto',
@@ -113,7 +114,7 @@ const LanguageSelect = () => {
   const currentOption = options.find(option => option.value === language);
 
   return (
-    <div className="flex items-center space-x-2">
+    <div className="flex items-center justify-end space-x-2">
       <span className="text-gray-500">🌐</span>
       <Select
         value={currentOption}

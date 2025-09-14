@@ -3,6 +3,7 @@
 import { Shirt, Footprints, PenTool, Hammer, Sparkles, Watch, Smartphone, Home } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { useState } from 'react';
+import AnimatedSection from './AnimatedSection';
 
 const StoreTypes = () => {
   const { t } = useLanguage();
@@ -88,38 +89,50 @@ const StoreTypes = () => {
           {/* Left side - Store types */}
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              <span className="text-gray-900">Hoomo</span> <span className="text-blue-600">har qanday do&apos;konga </span> mos keladi
+              <span className="text-gray-900">Hoomo</span>{" "}
+              <span className="text-blue-600">har qanday do&apos;konga </span>{" "}
+              mos keladi
             </h2>
-            
+
             <div className="grid grid-cols-2 gap-4 mt-8">
               {storeTypes.map((store, index) => (
-                <div 
-                  key={index} 
-                  className={`${getColorClasses(store.color)} rounded-xl p-4 text-center cursor-pointer transition-all duration-300 transform hover:scale-105 flex items-center gap-2`}
-                  onMouseEnter={() => setHoveredStore(index)}
-                  onMouseLeave={() => setHoveredStore(null)}
-                >
-                  <store.icon className="h-8 w-8" />
-                  <h3 className="font-semibold text-sm">
-                    {store.name}
-                  </h3>
-                </div>
+                <AnimatedSection delay={index * 0.1} key={index}>
+                  <div
+                    key={index}
+                    className={`${getColorClasses(
+                      store.color
+                    )} rounded-xl p-4 text-center cursor-pointer transition-all duration-300 transform hover:scale-105 flex items-center gap-2`}
+                    onMouseEnter={() => setHoveredStore(index)}
+                    onMouseLeave={() => setHoveredStore(null)}
+                  >
+                    <store.icon className="h-8 w-8" />
+                    <h3 className="font-semibold text-sm">{store.name}</h3>
+                  </div>
+                </AnimatedSection>
               ))}
             </div>
           </div>
 
           {/* Right side - Image */}
-          <div className="relative">
-            <div className={`relative overflow-hidden rounded-2xl shadow-2xl transition-all duration-500 ${
-                  hoveredStore !== null ? storeTypes[hoveredStore].rotate : 'rotate-0'
-                }`}>
-              <img 
-                src={hoveredStore !== null ? storeTypes[hoveredStore].image : "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&h=600&fit=crop"}
+          <AnimatedSection delay={0.4} className="relative">
+            <div
+              className={`relative overflow-hidden rounded-2xl shadow-2xl transition-all duration-500 ${
+                hoveredStore !== null
+                  ? storeTypes[hoveredStore].rotate
+                  : "rotate-0"
+              }`}
+            >
+              <img
+                src={
+                  hoveredStore !== null
+                    ? storeTypes[hoveredStore].image
+                    : "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&h=600&fit=crop"
+                }
                 alt="Store"
                 className={`w-full h-96 object-cover transition-all duration-500 `}
               />
             </div>
-          </div>
+          </AnimatedSection>
         </div>
       </div>
     </section>
