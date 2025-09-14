@@ -28,7 +28,8 @@
     "integrations": "Integratsiya"
   },
   "hero": {
-    "title": "Kiyim do'konlari uchun superkuch",
+    "superpower_title": "<0>Kosmetika</0> do'konlari uchun superkuch",
+    "title": "do'konlari uchun superkuch",
     "subtitle": "Tovarlar, mijozlar, kassa, moliya va boshqa ko'p ma'lumotlarni hisobga olish - barchasi bitta oddiy va qulay dasturda",
     "try_button": "Sinab ko'rish",
     "watch_video": "Videoni tomosha qilish",
@@ -51,7 +52,7 @@
     }
   },
   "features": {
-    "title": "Barcha vazifalar uchun bitta yechim!",
+    "title": "Barcha vazifalar uchun bitta <0>yechim</0>!",
     "inventory": {
       "title": "Tovarlar hisobini yuritish",
       "description": "Siz har doim qancha tovaringiz borligini, miqdori qancha ekanligini aniq bilasiz, shuningdek xodimlarning firibgarligi bilan bog'liq o'g'irlik va yo'qotishlardan xalos bo'lasiz.",
@@ -86,23 +87,23 @@
     "all_features": "Barcha imkoniyatlar"
   },
   "testimonials": {
-    "title": "1500 dan ortiq do'konlar Hoomo bilan yuzlab soat vaqtini tejamoqda",
+    "title": "<0>1500</0> dan ortiq do`konlar Hoomo bilan yuzlab soat vaqtini tejamoqda, savdo hajmini oshirmoqda va o`z mijozlarining sodiqligini yaxshilamoqda.",
     "subtitle": "Savdo hajmini oshirmoqda va o'z mijozlarining sodiqligini yaxshilamoqda",
     "media_title": "Местные и зарубежные издания пишут о Hoomo"
   },
   "store_types": {
-    "title": "Hoomo har qanday do'konga mos keladi"
+    "title": "Hoomo <0>har qanday do`konga</0> mos keladi"
   },
   "support": {
     "title": "Sozlaymiz. O'rgatamiz. Tez o'rnatib beramiz.",
     "subtitle": "Bizning menejerlarimiz sizga tovarlarni kiritish, uskunalarni ulash, xodimlarni o'rgatishda yordam beradi, shuningdek, 7 kunlik test foydalanish muddatini taqdim etadi!",
     "paper": {
-      "title": "Hisob-kitoblaringizni qog'ozda yuritasizmi?",
+      "title": "Hisob-kitoblaringizni <0>qog'ozda yuritasizmi?</0>",
       "description": "Tovarlaringizni hisoblash, ularni tizimga kiritish, do'koningizdagi jarayonlarni avtomatlashtirish va xodimlaringizni o'rgatishda yordam beramiz.",
       "button": "Menejer bilan bog'lanish"
     },
     "other": {
-      "title": "Boshqa dasturdan foydalanasizmi?",
+      "title": "<0>Boshqa dasturdan</0> foydalanasizmi?",
       "description": "Xizmatimizga ortiqcha yo'qotishlarsiz ulanishda yordam beramiz. Menejerlarimiz ma'lumotlarni ko'chirishda yordam beradi va hisob-kitobni tartibga soladi",
       "button": "Menejer bilan bog'lanish"
     },

@@ -5,6 +5,7 @@ import Testimonials from '@/components/Testimonials';
 import StoreTypes from '@/components/StoreTypes';
 import Support from '@/components/Support';
 import Footer from '@/components/Footer';
+import Questions from '@/components/Questions';
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Testimonials />
       <StoreTypes />
       <Support />
+      <Questions/>
       <Footer />
     </div>
   );

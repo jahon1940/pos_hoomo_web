@@ -4,6 +4,7 @@ import { Shirt, Footprints, PenTool, Hammer, Sparkles, Watch, Smartphone, Home }
 import { useLanguage } from '@/contexts/LanguageContext';
 import { useState } from 'react';
 import AnimatedSection from './AnimatedSection';
+import { Trans } from 'react-i18next';
 
 const StoreTypes = () => {
   const { t } = useLanguage();
@@ -83,16 +84,17 @@ const StoreTypes = () => {
   };
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-10 md:py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left side - Store types */}
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              <span className="text-gray-900">Hoomo</span>{" "}
-              <span className="text-blue-600">har qanday do&apos;konga </span>{" "}
-              mos keladi
+              <Trans i18nKey="store_types.title">
+                <span className="text-primary">placeholder</span>
+              </Trans>
             </h2>
+            
 
             <div className="grid grid-cols-2 gap-4 mt-8">
               {storeTypes.map((store, index) => (

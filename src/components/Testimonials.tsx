@@ -3,6 +3,7 @@
 import { Star, Quote } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import Marquee from 'react-fast-marquee';
+import { Trans } from 'react-i18next';
 
 const Testimonials = () => {
   const { t } = useLanguage();
@@ -50,17 +51,18 @@ const Testimonials = () => {
     <section className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            {t("testimonials.title")}
+          <h2 className="text-4xl md:text-6xl text-left font-bold text-gray-900 mb-4">
+            <Trans i18nKey="testimonials.title">
+              <span className="text-primary">1500</span>
+            </Trans>
           </h2>
-          <p className="text-xl text-gray-600">{t("testimonials.subtitle")}</p>
         </div>
-        <Marquee pauseOnHover={true}>
-          <div className="flex">
+        <Marquee className="w-full" pauseOnHover={true}>
+          <div className="flex max-w-full">
             {testimonials.map((testimonial, index) => (
               <div
                 key={index}
-                className="w-[400px] mx-4 bg-white rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow"
+                className="w-full md:w-[400px] mx-4 bg-white rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow"
               >
                 <div className="border-b pb-4 mb-4">
                   <div className="font-semibold text-gray-900">

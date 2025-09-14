@@ -11,7 +11,7 @@ const Hero = () => {
   const { t } = useLanguage();
   
   return (
-    <section className="bg-white py-10 md:py-20 relative overflow-hidden pb-30">
+    <section className="bg-white py-10 md:py-20 relative overflow-hidden pb-0 md:pb-30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Images positioned around the hero content */}
         <div className="relative mb-20 lg:mb-0">
