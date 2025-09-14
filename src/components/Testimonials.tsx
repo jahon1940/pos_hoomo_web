@@ -57,7 +57,29 @@ const Testimonials = () => {
             </Trans>
           </h2>
         </div>
-        <Marquee className="w-full" pauseOnHover={true}>
+        <Marquee
+          className="flex items-center justify-center gap-10 w-full mb-10"
+          pauseOnHover={true}
+          autoFill={true}
+        >
+          <div className="flex items-center justify-center gap-10 w-full">
+            <img className="w-[200px]" src="/images/partner1.png" alt="" />
+            <img className="w-[200px]" src="/images/partner2.png" alt="" />
+            <img className="w-[200px]" src="/images/partner1.png" alt="" />
+            <img className="w-[200px]" src="/images/partner2.png" alt="" />
+            <img className="w-[200px]" src="/images/partner1.png" alt="" />
+            <img className="w-[200px]" src="/images/partner2.png" alt="" />
+            <img className="w-[200px]" src="/images/partner1.png" alt="" />
+            <img className="w-[200px]" src="/images/partner2.png" alt="" />
+            <img className="w-[200px]" src="/images/partner1.png" alt="" />
+            <img className="w-[200px]" src="/images/partner2.png" alt="" />
+            <img className="w-[200px]" src="/images/partner1.png" alt="" />
+            <img className="w-[200px]" src="/images/partner2.png" alt="" />
+            <img className="w-[200px]" src="/images/partner1.png" alt="" />
+            <img className="w-[200px]" src="/images/partner2.png" alt="" />
+          </div>
+        </Marquee>
+        <Marquee direction="right" className="w-full" pauseOnHover={true}>
           <div className="flex max-w-full">
             {testimonials.map((testimonial, index) => (
               <div
