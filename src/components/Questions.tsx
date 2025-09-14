@@ -5,6 +5,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import Marquee from "react-fast-marquee";
 import { Trans } from "react-i18next";
 import { FaCircleArrowRight } from "react-icons/fa6";
+import AnimatedSection from "./AnimatedSection";
 
 const Questions = () => {
   const { t } = useLanguage();
@@ -15,7 +16,7 @@ const Questions = () => {
         {t("questions.marquee")}
       </Marquee>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+        <AnimatedSection delay={0.2} className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
           <div className="bg-gray-100 rounded-4xl p-8 shadow-sm">
             <div className="flex items-center mb-10 md:h-18">
               <div className="bg-blue-100 p-3 rounded-lg mr-4">
@@ -59,9 +60,9 @@ const Questions = () => {
               </span>
             </button>
           </div>
-        </div>
+        </AnimatedSection>
 
-        <div className="bg-white rounded-xl p-8 shadow-sm text-center">
+        <AnimatedSection delay={0.4} className="bg-white rounded-xl p-8 shadow-sm text-center">
           <div className="flex items-center justify-center mb-6">
             <div className="bg-blue-100 p-3 rounded-lg mr-4">
               <Phone className="h-6 w-6 text-blue-600" />
@@ -73,7 +74,7 @@ const Questions = () => {
               <div className="text-gray-600">{t("support.contact.email")}</div>
             </div>
           </div>
-        </div>
+        </AnimatedSection>
       </div>
     </section>
   );

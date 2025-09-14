@@ -4,6 +4,7 @@ import { Star, Quote } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import Marquee from 'react-fast-marquee';
 import { Trans } from 'react-i18next';
+import AnimatedSection from './AnimatedSection';
 
 const Testimonials = () => {
   const { t } = useLanguage();
@@ -50,68 +51,72 @@ const Testimonials = () => {
   return (
     <section className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <AnimatedSection delay={0.1} className="text-center mb-16">
           <h2 className="text-xl sm:text-4xl md:text-6xl text-left font-bold text-gray-900 mb-4">
             <Trans i18nKey="testimonials.title">
               <span className="text-primary">1500</span>
             </Trans>
           </h2>
-        </div>
-        <Marquee
-          className="flex items-center justify-center gap-10 w-full mb-10"
-          pauseOnHover={true}
-          autoFill={true}
-        >
-          <div className="flex items-center justify-center gap-10 w-full">
-            <img className="w-[200px]" src="/images/partner1.png" alt="" />
-            <img className="w-[200px]" src="/images/partner2.png" alt="" />
-            <img className="w-[200px]" src="/images/partner1.png" alt="" />
-            <img className="w-[200px]" src="/images/partner2.png" alt="" />
-            <img className="w-[200px]" src="/images/partner1.png" alt="" />
-            <img className="w-[200px]" src="/images/partner2.png" alt="" />
-            <img className="w-[200px]" src="/images/partner1.png" alt="" />
-            <img className="w-[200px]" src="/images/partner2.png" alt="" />
-            <img className="w-[200px]" src="/images/partner1.png" alt="" />
-            <img className="w-[200px]" src="/images/partner2.png" alt="" />
-            <img className="w-[200px]" src="/images/partner1.png" alt="" />
-            <img className="w-[200px]" src="/images/partner2.png" alt="" />
-            <img className="w-[200px]" src="/images/partner1.png" alt="" />
-            <img className="w-[200px]" src="/images/partner2.png" alt="" />
-          </div>
-        </Marquee>
-        <Marquee direction="right" className="w-full" pauseOnHover={true}>
-          <div className="flex max-w-full">
-            {testimonials.map((testimonial, index) => (
-              <div
-                key={index}
-                className="w-[300px] md:w-[400px] mx-4 bg-white rounded-4xl p-8 shadow-sm hover:shadow-md transition-shadow"
-              >
-                <div className="border-b pb-4 mb-4">
-                  <div className="font-semibold text-gray-900">
-                    {testimonial.name}
+        </AnimatedSection>
+        <AnimatedSection delay={0.2}>
+          <Marquee
+            className="flex items-center justify-center gap-10 w-full mb-10"
+            pauseOnHover={true}
+            autoFill={true}
+          >
+            <div className="flex items-center justify-center gap-10 w-full">
+              <img className="w-[200px]" src="/images/partner1.png" alt="" />
+              <img className="w-[200px]" src="/images/partner2.png" alt="" />
+              <img className="w-[200px]" src="/images/partner1.png" alt="" />
+              <img className="w-[200px]" src="/images/partner2.png" alt="" />
+              <img className="w-[200px]" src="/images/partner1.png" alt="" />
+              <img className="w-[200px]" src="/images/partner2.png" alt="" />
+              <img className="w-[200px]" src="/images/partner1.png" alt="" />
+              <img className="w-[200px]" src="/images/partner2.png" alt="" />
+              <img className="w-[200px]" src="/images/partner1.png" alt="" />
+              <img className="w-[200px]" src="/images/partner2.png" alt="" />
+              <img className="w-[200px]" src="/images/partner1.png" alt="" />
+              <img className="w-[200px]" src="/images/partner2.png" alt="" />
+              <img className="w-[200px]" src="/images/partner1.png" alt="" />
+              <img className="w-[200px]" src="/images/partner2.png" alt="" />
+            </div>
+          </Marquee>
+        </AnimatedSection>
+        <AnimatedSection delay={0.3}>
+          <Marquee direction="right" className="w-full" pauseOnHover={true}>
+            <div className="flex max-w-full">
+              {testimonials.map((testimonial, index) => (
+                <div
+                  key={index}
+                  className="w-[300px] md:w-[400px] mx-4 bg-white rounded-4xl p-8 shadow-sm hover:shadow-md transition-shadow"
+                >
+                  <div className="border-b pb-4 mb-4">
+                    <div className="font-semibold text-gray-900">
+                      {testimonial.name}
+                    </div>
+                    <div className="text-sm text-gray-600">
+                      {testimonial.position}
+                    </div>
                   </div>
-                  <div className="text-sm text-gray-600">
-                    {testimonial.position}
+
+                  <p className="text-gray-700 mb-6 leading-relaxed">
+                    &ldquo;{testimonial.content}&rdquo;
+                  </p>
+                  <div className="flex items-center mb-4">
+                    {[...Array(testimonial.rating)].map((_, i) => (
+                      <Star
+                        key={i}
+                        className="h-5 w-5 text-yellow-400 fill-current"
+                      />
+                    ))}
                   </div>
-                </div>
 
-                <p className="text-gray-700 mb-6 leading-relaxed">
-                  &ldquo;{testimonial.content}&rdquo;
-                </p>
-                <div className="flex items-center mb-4">
-                  {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star
-                      key={i}
-                      className="h-5 w-5 text-yellow-400 fill-current"
-                    />
-                  ))}
+                  <Quote className="h-8 w-8 text-blue-600 " />
                 </div>
-
-                <Quote className="h-8 w-8 text-blue-600 " />
-              </div>
-            ))}
-          </div>
-        </Marquee>
+              ))}
+            </div>
+          </Marquee>
+        </AnimatedSection>
       </div>
     </section>
   );
