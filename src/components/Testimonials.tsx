@@ -84,7 +84,7 @@ const Testimonials = () => {
         </AnimatedSection>
         <AnimatedSection delay={0.3}>
           <Marquee direction="right" className="w-full" pauseOnHover={true}>
-            <div className="flex max-w-full">
+            <div className="flex max-w-full py-4 ">
               {testimonials.map((testimonial, index) => (
                 <div
                   key={index}
