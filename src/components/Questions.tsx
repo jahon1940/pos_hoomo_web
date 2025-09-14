@@ -11,7 +11,7 @@ const Questions = () => {
 
   return (
     <section className="py-10 md:py-15 bg-white">
-      <Marquee className="text-black text-3xl mb-10">
+      <Marquee className="text-black text-xl md:text-3xl mb-10">
         Bepul yordam va qo'llab-quvvatlash • Bepul yordam va qo'llab-quvvatlash
         • Bepul yordam va qo'llab-quvvatlash • Bepul yordam va
         qo'llab-quvvatlash • Bepul yordam va qo'llab-quvvatlash • Bepul yordam
@@ -21,11 +21,11 @@ const Questions = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
           <div className="bg-gray-100 rounded-4xl p-8 shadow-sm">
-            <div className="flex items-center mb-10 h-18">
+            <div className="flex items-center mb-10 md:h-18">
               <div className="bg-blue-100 p-3 rounded-lg mr-4">
                 <BookOpen className="h-6 w-6 text-blue-600" />
               </div>
-              <h3 className="text-3xl font-semibold text-gray-900">
+              <h3 className=" text-xl md:text-3xl font-semibold text-gray-900">
                 <Trans i18nKey="support.paper.title">
                   <span className="text-primary">placeholder</span>
                 </Trans>
@@ -47,7 +47,7 @@ const Questions = () => {
               <div className="bg-green-100 p-3 rounded-lg mr-4">
                 <Settings className="h-6 w-6 text-green-600" />
               </div>
-              <h3 className="text-3xl font-semibold text-gray-900">
+              <h3 className=" text-xl md:text-3xl font-semibold text-gray-900">
                 <Trans i18nKey="support.other.title">
                   <span className="text-primary">placeholder</span>
                 </Trans>

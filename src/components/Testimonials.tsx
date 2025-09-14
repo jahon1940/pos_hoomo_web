@@ -51,7 +51,7 @@ const Testimonials = () => {
     <section className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-6xl text-left font-bold text-gray-900 mb-4">
+          <h2 className="text-xl sm:text-4xl md:text-6xl text-left font-bold text-gray-900 mb-4">
             <Trans i18nKey="testimonials.title">
               <span className="text-primary">1500</span>
             </Trans>
@@ -62,7 +62,7 @@ const Testimonials = () => {
             {testimonials.map((testimonial, index) => (
               <div
                 key={index}
-                className="w-full md:w-[400px] mx-4 bg-white rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow"
+                className="w-[300px] md:w-[400px] mx-4 bg-white rounded-4xl p-8 shadow-sm hover:shadow-md transition-shadow"
               >
                 <div className="border-b pb-4 mb-4">
                   <div className="font-semibold text-gray-900">
