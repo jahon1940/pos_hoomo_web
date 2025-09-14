@@ -23,7 +23,7 @@ const AnimatedText = () => {
   }, [currentWords.length]);
 
   return (
-    <span className="text-blue-500 transition-all duration-500 ease-in-out inline-block min-w-[200px] text-left">
+    <span className="text-primary transition-all duration-500 ease-in-out inline-block min-w-[200px] text-left">
       {currentWords[currentWordIndex]}
     </span>
   );

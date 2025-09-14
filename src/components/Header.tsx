@@ -56,7 +56,7 @@ const Header = () => {
             {/* Logo */}
             <div className="flex items-center">
               <div className="flex items-center">
-                <div className="w-8 h-8 bg-blue-600 rounded flex items-center justify-center mr-3">
+                <div className="w-8 h-8 bg-primary rounded flex items-center justify-center mr-3">
                   <span className="text-white font-bold text-lg">Z</span>
                 </div>
                 <div className="text-2xl font-bold text-gray-900">Hoomo</div>
@@ -67,7 +67,7 @@ const Header = () => {
           <nav className="hidden md:flex items-center space-x-8">
             <div className="relative group">
               <button 
-                className="flex items-center text-gray-700 hover:text-blue-600 transition-colors"
+                className="flex items-center text-gray-700 hover:text-primary transition-colors"
                 onMouseEnter={() => setIsSolutionsOpen(true)}
                 onMouseLeave={() => setIsSolutionsOpen(false)}
               >
@@ -86,7 +86,7 @@ const Header = () => {
                       <a
                         key={index}
                         href="#"
-                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-blue-600"
+                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary"
                       >
                         {solution}
                       </a>
