@@ -2,6 +2,7 @@
 
 import { Star, Quote } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
+import Marquee from 'react-fast-marquee';
 
 const Testimonials = () => {
   const { t } = useLanguage();
@@ -50,53 +51,43 @@ const Testimonials = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            {t('testimonials.title')}
+            {t("testimonials.title")}
           </h2>
-          <p className="text-xl text-gray-600">
-            {t('testimonials.subtitle')}
-          </p>
+          <p className="text-xl text-gray-600">{t("testimonials.subtitle")}</p>
         </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {testimonials.map((testimonial, index) => (
-            <div key={index} className="bg-white rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow">
-              <div className="flex items-center mb-4">
-                {[...Array(testimonial.rating)].map((_, i) => (
-                  <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
-                ))}
-              </div>
-              
-              <Quote className="h-8 w-8 text-blue-600 mb-4" />
-              
-              <p className="text-gray-700 mb-6 leading-relaxed">
-                &ldquo;{testimonial.content}&rdquo;
-              </p>
-              
-              <div className="border-t pt-4">
-                <div className="font-semibold text-gray-900">
-                  {testimonial.name}
+        <Marquee pauseOnHover={true}>
+          <div className="flex">
+            {testimonials.map((testimonial, index) => (
+              <div
+                key={index}
+                className="w-[400px] mx-4 bg-white rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow"
+              >
+                <div className="border-b pb-4 mb-4">
+                  <div className="font-semibold text-gray-900">
+                    {testimonial.name}
+                  </div>
+                  <div className="text-sm text-gray-600">
+                    {testimonial.position}
+                  </div>
                 </div>
-                <div className="text-sm text-gray-600">
-                  {testimonial.position}
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
 
-        <div className="text-center mt-12">
-          <div className="bg-white rounded-xl p-8 shadow-sm max-w-4xl mx-auto">
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">
-              {t('testimonials.media_title')}
-            </h3>
-            <div className="flex flex-wrap justify-center items-center gap-8 opacity-60">
-              <div className="text-lg font-semibold text-gray-500">Forbes</div>
-              <div className="text-lg font-semibold text-gray-500">TechCrunch</div>
-              <div className="text-lg font-semibold text-gray-500">VentureBeat</div>
-              <div className="text-lg font-semibold text-gray-500">Startup Grind</div>
-            </div>
+                <p className="text-gray-700 mb-6 leading-relaxed">
+                  &ldquo;{testimonial.content}&rdquo;
+                </p>
+                <div className="flex items-center mb-4">
+                  {[...Array(testimonial.rating)].map((_, i) => (
+                    <Star
+                      key={i}
+                      className="h-5 w-5 text-yellow-400 fill-current"
+                    />
+                  ))}
+                </div>
+
+                <Quote className="h-8 w-8 text-blue-600 " />
+              </div>
+            ))}
           </div>
-        </div>
+        </Marquee>
       </div>
     </section>
   );

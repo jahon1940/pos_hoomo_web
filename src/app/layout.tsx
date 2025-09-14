@@ -16,8 +16,13 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Hoomo - Do'kon boshqaruvi uchun professional yechim",
-  description: "Tovarlar, mijozlar, kassa, moliya va boshqa ko'p ma'lumotlarni hisobga olish - barchasi bitta oddiy va qulay dasturda",
+  description:
+    "Tovarlar, mijozlar, kassa, moliya va boshqa ko'p ma'lumotlarni hisobga olish - barchasi bitta oddiy va qulay dasturda",
+  icons: {
+    icon: "/favicon.png", // PNG favicon
+  },
 };
+
 
 export default function RootLayout({
   children,

@@ -17,13 +17,13 @@ const AnimatedText = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentWordIndex((prevIndex) => (prevIndex + 1) % currentWords.length);
-    }, 1000); // 1 sekunda
+    }, 1500); // 1.5 sekunda
 
     return () => clearInterval(interval);
   }, [currentWords.length]);
 
   return (
-    <span className="text-primary transition-all duration-500 ease-in-out inline-block min-w-[200px] text-left">
+    <span className="text-primary transition-all duration-500 ease-in-out inline-block min-w-[200px] text-center">
       {currentWords[currentWordIndex]}
     </span>
   );

@@ -82,7 +82,7 @@ const Header = () => {
 
                 {isSolutionsOpen && (
                   <div
-                    className="absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-lg border z-50"
+                    className="absolute top-full left-0 mt-0 w-64 bg-white rounded-lg shadow-lg border z-50"
                     onMouseEnter={() => setIsSolutionsOpen(true)}
                     onMouseLeave={() => setIsSolutionsOpen(false)}
                   >
