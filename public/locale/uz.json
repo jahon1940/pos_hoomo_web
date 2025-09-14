@@ -1,0 +1,123 @@
+{
+  "nav": {
+    "solutions": "Yechimlar",
+    "why_billz": "Nima uchun Hoomo?",
+    "pricing": "Narxlar",
+    "resources": "Resurslar",
+    "company": "Kompaniya",
+    "login": "Kirish",
+    "get_demo": "Demo olish",
+    "contact_phone": "+998 78 113 60 14",
+    "contact_manager": "Bog'lanish menejer bilan:"
+  },
+  "solutions": {
+    "store_management": "Do'kon boshqaruvi",
+    "clothing_store": "Kiyim do'koni",
+    "shoe_store": "Poyabzal do'koni",
+    "stationery_store": "Kanselyariya do'koni",
+    "construction_store": "Qurilish mollari do'koni",
+    "cosmetics_store": "Kosmetika do'koni",
+    "accessories_store": "Aksessuarlar do'koni",
+    "electronics_store": "Elektronika do'koni",
+    "household_store": "Uy-ro'zg'or buyumlari",
+    "start_online": "Onlayn savdoni boshlash",
+    "internet_store": "Internet-do'kon",
+    "telegram_bot": "Telegram-bot",
+    "financing": "Moliyalashtirish",
+    "all_features": "Barcha imkoniyatlar",
+    "integrations": "Integratsiya"
+  },
+  "hero": {
+    "title": "Kiyim do'konlari uchun superkuch",
+    "subtitle": "Tovarlar, mijozlar, kassa, moliya va boshqa ko'p ma'lumotlarni hisobga olish - barchasi bitta oddiy va qulay dasturda",
+    "try_button": "Sinab ko'rish",
+    "watch_video": "Videoni tomosha qilish",
+    "stats": {
+      "stores": "Do'konlar",
+      "time_saved": "Vaqt tejash",
+      "sales_growth": "Savdo o'sishi"
+    },
+    "images": {
+      "clothing": "Kiyim do'koni",
+      "clothing_desc": "Tovarlarni boshqarish",
+      "shoes": "Poyabzal do'koni",
+      "shoes_desc": "Inventarizatsiya",
+      "cosmetics": "Kosmetika do'koni",
+      "cosmetics_desc": "Mijozlar bazasi",
+      "electronics": "Elektronika do'koni",
+      "electronics_desc": "Kassa tizimi",
+      "household": "Uy-ro'zg'or",
+      "household_desc": "Hisobotlar"
+    }
+  },
+  "features": {
+    "title": "Barcha vazifalar uchun bitta yechim!",
+    "inventory": {
+      "title": "Tovarlar hisobini yuritish",
+      "description": "Siz har doim qancha tovaringiz borligini, miqdori qancha ekanligini aniq bilasiz, shuningdek xodimlarning firibgarligi bilan bog'liq o'g'irlik va yo'qotishlardan xalos bo'lasiz.",
+      "benefit": "O'rtacha hisobda mijozlarimiz vaqtni 40% gacha tejaydi."
+    },
+    "customers": {
+      "title": "Mijozlarni boshqarish",
+      "description": "Siz mijozlarning xohishlarini kuzatishingiz, samarali sodiqlik dasturlarini yoki keshbeklarni o'rnatishingiz mumkin.",
+      "benefit": "Savdo hajmini o'rtacha 30% ga oshiradi."
+    },
+    "sales": {
+      "title": "Savdo va kassani boshqarish",
+      "description": "Kassirlar kerakli tovarlarni osongina qidirishlari, qaytarish va almashtirishlarni qayd etishlari va smenani yopishlari mumkin bo'ladi.",
+      "benefit": "Savdo hajmi, kassa va yaxshi sotilayotgan mahsulotlar haqidagi hisobotlar Telegram-bot orqali avtomatik tarzda rahbarga yuboriladi."
+    },
+    "reports": {
+      "title": "Ma'lumotlarga asoslangan hisobotlar va tahlillar",
+      "description": "Mahsulotlar, do'konlar, sotuvchilar va moliya haqidagi hisobotlar to'g'ri qaror qabul qilishingizga yordam beradi.",
+      "benefit": "Tovarlarni sotib olish, sotish va xalos bo'lish o'rtacha 30% ga samaraliroq amalga oshiriladi."
+    },
+    "marketing": {
+      "title": "Marketing vositalari",
+      "description": "Sovg'a sertifikatlari, xaridorlarni xarid turlari bo'yicha segmentatsiyalash, xaridlar asosida shaxsiylashtirilgan takliflar, shaxsiylashtirilgan SMS-kampaniyalarni yuborish.",
+      "benefit": "Yangi mijozlarni jalb qilish va xaridlarni ko'paytirishga yordam beradi."
+    },
+    "finance": {
+      "title": "Moliyani boshqarish",
+      "description": "Kassa xarajatlarini boshqarish, pul mablag'larining harakati, foyda va zarar bo'yicha hisobotlar.",
+      "benefit": "Qaysi do'konlar foyda olib kelayotgani, qaysilarida esa daromad olib kelishi uchun xarajatlarni kamaytirish kerakligini aniq ko'rish imkonini beradi."
+    },
+    "learn_more": "Ko'proq ma'lumot olish",
+    "all_features": "Barcha imkoniyatlar"
+  },
+  "testimonials": {
+    "title": "1500 dan ortiq do'konlar Hoomo bilan yuzlab soat vaqtini tejamoqda",
+    "subtitle": "Savdo hajmini oshirmoqda va o'z mijozlarining sodiqligini yaxshilamoqda",
+    "media_title": "Местные и зарубежные издания пишут о Hoomo"
+  },
+  "store_types": {
+    "title": "Hoomo har qanday do'konga mos keladi"
+  },
+  "support": {
+    "title": "Sozlaymiz. O'rgatamiz. Tez o'rnatib beramiz.",
+    "subtitle": "Bizning menejerlarimiz sizga tovarlarni kiritish, uskunalarni ulash, xodimlarni o'rgatishda yordam beradi, shuningdek, 7 kunlik test foydalanish muddatini taqdim etadi!",
+    "paper": {
+      "title": "Hisob-kitoblaringizni qog'ozda yuritasizmi?",
+      "description": "Tovarlaringizni hisoblash, ularni tizimga kiritish, do'koningizdagi jarayonlarni avtomatlashtirish va xodimlaringizni o'rgatishda yordam beramiz.",
+      "button": "Menejer bilan bog'lanish"
+    },
+    "other": {
+      "title": "Boshqa dasturdan foydalanasizmi?",
+      "description": "Xizmatimizga ortiqcha yo'qotishlarsiz ulanishda yordam beramiz. Menejerlarimiz ma'lumotlarni ko'chirishda yordam beradi va hisob-kitobni tartibga soladi",
+      "button": "Menejer bilan bog'lanish"
+    },
+    "contact": {
+      "phone": "+998 78 113 60 14",
+      "email": "hello@billz.io"
+    }
+  },
+  "footer": {
+    "solutions": "Yechimlar",
+    "why_billz": "Nima uchun Hoomo?",
+    "resources": "Resurslar",
+    "partners": "Hamkorlar uchun",
+    "company": "Kompaniya",
+    "copyright": "© 2025 Hoomo. Barcha huquqlar himoyalangan.",
+    "country": "O'zbekiston"
+  }
+}
