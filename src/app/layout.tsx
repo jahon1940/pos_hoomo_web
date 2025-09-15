@@ -31,7 +31,7 @@ export const metadata: Metadata = {
       {
         url: "/favicon.png", // Telegramda ko‘rinadigan rasm
         width: 600,
-        height: 330,
+        height: 315,
         alt: "Hoomo img",
       },
     ],
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   twitter: {
-    card: "summary_large_image",
+    card: "summary",
     title: "Hoomo - Do'kon boshqaruvi uchun professional yechim",
     description:
       "Tovarlar, mijozlar, kassa, moliya va boshqa ko'p ma'lumotlarni hisobga olish - barchasi bitta oddiy va qulay dasturda",
