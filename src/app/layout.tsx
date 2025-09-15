@@ -21,6 +21,30 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon.png", // PNG favicon
   },
+  openGraph: {
+    title: "Hoomo - Do'kon boshqaruvi uchun professional yechim",
+    description:
+      "Tovarlar, mijozlar, kassa, moliya va boshqa ko'p ma'lumotlarni hisobga olish - barchasi bitta oddiy va qulay dasturda",
+    url: "https://hoomo-service.vercel.app/",
+    siteName: "Hoomo service",
+    images: [
+      {
+        url: "/favicon.png", // Telegramda ko‘rinadigan rasm
+        width: 1200,
+        height: 630,
+        alt: "Hoomo img",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Hoomo - Do'kon boshqaruvi uchun professional yechim",
+    description:
+      "Tovarlar, mijozlar, kassa, moliya va boshqa ko'p ma'lumotlarni hisobga olish - barchasi bitta oddiy va qulay dasturda",
+    images: ["/favicon.png"],
+  },
 };
 
 
