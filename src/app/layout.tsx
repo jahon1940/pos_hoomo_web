@@ -30,8 +30,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: "/favicon.png", // Telegramda ko‘rinadigan rasm
-        width: 1200,
-        height: 630,
+        width: 600,
+        height: 330,
         alt: "Hoomo img",
       },
     ],
