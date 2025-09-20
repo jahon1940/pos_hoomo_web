@@ -14,7 +14,7 @@ import 'swiper/css/pagination';
 
 const Hero2 = () => {
   const { t } = useLanguage();
-  const swiperRef = useRef<any>(null);
+  const swiperRef = useRef<SwiperRef>(null);
   const [activeSlide, setActiveSlide] = useState(0);
   const [mobileImageKey, setMobileImageKey] = useState(0);
 
@@ -38,15 +38,13 @@ const Hero2 = () => {
   ];
 
   // Slide o'zgarganda mobile rasm animatsiyasini boshqarish
-  const handleSlideChange = (swiper: any) => {
-    setActiveSlide(swiper.activeIndex);
-    // Avval mobile rasmni yo'q qilish
-    setMobileImageKey(0);
-    // 0.2 sekunddan keyin yangi mobile rasmni ko'rsatish
-    setTimeout(() => {
-      setMobileImageKey(prev => prev + 1);
-    }, 200);
-  };
+  const handleSlideChange = (swiper: SwiperClass) => {
+  setActiveSlide(swiper.activeIndex);
+  setMobileImageKey(0);
+  setTimeout(() => {
+    setMobileImageKey(prev => prev + 1);
+  }, 200);
+};
 
   return (
     <section className="bg-white py-16 md:py-24 relative overflow-hidden">
