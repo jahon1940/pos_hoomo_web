@@ -29,7 +29,7 @@ const StoreTypes = () => {
       icon: PenTool, 
       name: t('solutions.stationery_store'), 
       color: "purple",
-      image: "https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=800&h=600&fit=crop",
+      image: "/images/store3.png",
       rotate: "rotate-1"
     },
     { 

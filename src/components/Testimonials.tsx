@@ -13,37 +13,37 @@ const Testimonials = () => {
     {
       name: "Yana Chekubash",
       position: "Pink Island do'konlari egasi",
-      content: "Hoomo bilan mijozlarimiz soni 20% ga oshdi. Ombor logistikasi va mahsulotlarni import qilishga sarflanayotgan vaqt sezilarli darajada qisqardi. Ushbu omillarning har biri tovar aylanmasining 15% ga oshishiga ta'sir ko'rsatdi.",
+      content: "Hpossystem bilan mijozlarimiz soni 20% ga oshdi. Ombor logistikasi va mahsulotlarni import qilishga sarflanayotgan vaqt sezilarli darajada qisqardi. Ushbu omillarning har biri tovar aylanmasining 15% ga oshishiga ta'sir ko'rsatdi.",
       rating: 5
     },
     {
       name: "Amir Ghouri", 
       position: "Calvin Klein brend menejeri",
-      content: "20 dan ortiq kiyim-kechak do'konlari tarmog'iga ega bo'lgan FCN Group savdo kompaniyasi savdo tahlillari, tovar qoldiqlarini samarali boshqarish va Hoomo kompaniyasining boshqa ko'plab yechimlari yordamida faol rivojlanmoqda.",
+      content: "20 dan ortiq kiyim-kechak do'konlari tarmog'iga ega bo'lgan FCN Group savdo kompaniyasi savdo tahlillari, tovar qoldiqlarini samarali boshqarish va Hpossystem kompaniyasining boshqa ko'plab yechimlari yordamida faol rivojlanmoqda.",
       rating: 5
     },
     {
       name: "Rustam Esanov",
       position: "Button do'konlari egasi", 
-      content: "Mijozlarni boshqarishning ilg'or funksionalligi, hisob-kitoblarning aniqligi va ma'lumotlar auditini Hoomo dasturining afzalliklari qatoriga kiritishimiz mumkin. Hoomo bizga o'z vaqtida qaror qabul qilish va do'kon uchun sarflanayotgan vaqtni tejashga yordam beradi",
+      content: "Mijozlarni boshqarishning ilg'or funksionalligi, hisob-kitoblarning aniqligi va ma'lumotlar auditini Hpossystem dasturining afzalliklari qatoriga kiritishimiz mumkin. Hpossystem bizga o'z vaqtida qaror qabul qilish va do'kon uchun sarflanayotgan vaqtni tejashga yordam beradi",
       rating: 5
     },
     {
       name: "Olesya Xoryakova",
       position: "Yves Rocher do'konlari boshqaruvchisi",
-      content: "Hoomo'ning qo'llab-quvvatlash xizmatini juda ham qadrlayman. Hoomo bilan hamkorlikni boshlaganimizdan so'ng ish jarayonimiz osonlashdi. Telegram-bot'imizni ishga tushirdik, u onlayn savdoni yo'lga qo'yishga va brend taniqliligini oshirishga yordam bermoqda.",
+      content: "Hpossystem'ning qo'llab-quvvatlash xizmatini juda ham qadrlayman. Hpossystem bilan hamkorlikni boshlaganimizdan so'ng ish jarayonimiz osonlashdi. Telegram-bot'imizni ishga tushirdik, u onlayn savdoni yo'lga qo'yishga va brend taniqliligini oshirishga yordam bermoqda.",
       rating: 5
     },
     {
       name: "Yuliya Pak",
       position: "Lee&Wrangler do'koni egasi",
-      content: "Hoomo yordamida hisobotlarni tezroq olyapmiz, bu esa kelajakda talab yuqori bo'ladigan modellarni aniqlashga va yetkazib berishni o'z vaqtida rejalashtirishga yordam beradi. Bundan tashqari, Hoomo yordamida o'g'irliklarni kamaytirdik va mijozlar sonini ko'paytirdik",
+      content: "Hpossystem yordamida hisobotlarni tezroq olyapmiz, bu esa kelajakda talab yuqori bo'ladigan modellarni aniqlashga va yetkazib berishni o'z vaqtida rejalashtirishga yordam beradi. Bundan tashqari, Hpossystem yordamida o'g'irliklarni kamaytirdik va mijozlar sonini ko'paytirdik",
       rating: 5
     },
     {
       name: "Galina Txay",
       position: "Pudra do'koni egasi",
-      content: "Hoomo yordamida mijozlarga xizmat ko'rsatishni yaxshiladik, ombordagi qoldiqlarni boshqarishni osonlashtirdik, endi savdo haqidagi ma'lumotlarni istalgan joydan kuzatishimiz mumkin. Natijada faoliyatimizni kengaytirmoqdamiz.",
+      content: "Hpossystem yordamida mijozlarga xizmat ko'rsatishni yaxshiladik, ombordagi qoldiqlarni boshqarishni osonlashtirdik, endi savdo haqidagi ma'lumotlarni istalgan joydan kuzatishimiz mumkin. Natijada faoliyatimizni kengaytirmoqdamiz.",
       rating: 5
     }
   ];

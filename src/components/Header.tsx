@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { Menu, X, ChevronDown, Phone, ArrowRight } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import LanguageSelect from './LanguageSelect';
+import Link from 'next/link';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -36,17 +37,13 @@ const Header = () => {
           <div className="flex justify-between items-center h-10 text-sm">
             <div className="flex items-center text-gray-600">
               <Phone className="h-4 w-4 mr-2" />
-              <span className="hidden md:block">
+              <span className="hidden md:block ">
                 {t("nav.contact_manager")}{" "}
               </span>
-              <span>{t("nav.contact_phone")}</span>
+              <span className="font-semibold ml-1">{t("nav.contact_phone")}</span>
             </div>
             <div className="flex items-center space-x-4">
               <LanguageSelect />
-              <button className="hidden md:flex items-center text-gray-600 hover:text-blue-600 transition-colors">
-                <span className="mr-1">{t("nav.login")}</span>
-                <ArrowRight className="h-4 w-4" />
-              </button>
             </div>
           </div>
         </div>
@@ -57,16 +54,22 @@ const Header = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
-            <div className="flex items-center">
+            <Link href="/" className="flex items-center">
               <div className="flex items-center">
                 <div className="w-8 h-8 rounded flex items-center justify-center mr-3">
                   <span className="text-white font-bold text-lg">
-                    <img className='w-[20px] object-contain' src="/images/logo2.png" alt="" />
+                    <img
+                      className="w-[20px] object-contain"
+                      src="/images/logo2.png"
+                      alt=""
+                    />
                   </span>
                 </div>
-                <div className="text-2xl font-bold text-gray-900">Hoomo</div>
+                <div className="text-2xl font-bold text-gray-900">
+                  Hpossystem
+                </div>
               </div>
-            </div>
+            </Link>
 
             {/* Desktop Navigation */}
             <nav className="hidden md:flex items-center space-x-8">
@@ -119,12 +122,12 @@ const Header = () => {
               >
                 {t("nav.resources")}
               </a>
-              <a
-                href="#"
+              <Link
+                href="/about"
                 className="text-gray-700 hover:text-blue-600 transition-colors"
               >
                 {t("nav.company")}
-              </a>
+              </Link>
             </nav>
 
             {/* CTA Button */}
@@ -177,12 +180,12 @@ const Header = () => {
                 >
                   {t("nav.resources")}
                 </a>
-                <a
-                  href="#"
+                <Link
+                  href="/about"
                   className="block px-3 py-2 text-gray-700 hover:text-blue-600"
                 >
                   {t("nav.company")}
-                </a>
+                </Link>
                 <div className="pt-4 border-t">
                   <div className="flex items-center justify-center px-3 py-2">
                     <LanguageSelect />

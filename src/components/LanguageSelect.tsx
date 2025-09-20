@@ -97,7 +97,7 @@ const LanguageSelect = () => {
     singleValue: (provided) => ({
       ...provided,
       color: '#6B7280',
-      fontSize: '14px',
+      fontSize: '18px',
       fontWeight: '500',
       display: 'flex',
       alignItems: 'center',
@@ -114,7 +114,7 @@ const LanguageSelect = () => {
   const currentOption = options.find(option => option.value === language);
 
   return (
-    <div className="flex items-center justify-end space-x-2">
+    <div className="flex items-center justify-end space-x-2 ">
       <span className="text-gray-500">🌐</span>
       <Select
         value={currentOption}

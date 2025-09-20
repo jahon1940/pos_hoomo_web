@@ -7,14 +7,10 @@ const Footer = () => {
   const { t } = useLanguage();
   
   const solutions = [
-    t('solutions.clothing_store') + ' uchun',
-    t('solutions.shoe_store') + ' uchun', 
     t('solutions.stationery_store') + ' uchun',
-    t('solutions.construction_store') + ' uchun',
     t('solutions.cosmetics_store') + ' uchun',
     t('solutions.accessories_store') + ' uchun',
     t('solutions.electronics_store') + ' uchun',
-    t('solutions.household_store') + ' uchun',
     t('solutions.internet_store'),
     t('solutions.telegram_bot'),
     t('solutions.integrations'),
@@ -26,32 +22,19 @@ const Footer = () => {
     t('features.customers.title'),
     t('features.sales.title'),
     t('features.reports.title'),
-    t('features.marketing.title'),
-    t('features.finance.title')
   ];
 
   const resources = [
-    "Blog",
-    "Hoomo Yangilanishlari",
-    "Hoomo Akademiyasi",
-    "Mijozlar bilan intervyu",
+   
     "Qo'llab-quvvatlash xizmati",
-    "Dasturchilar uchun",
-    "Maxfiylik siyosati",
-    "Публичная оферта"
+    "Video darsliklar",
+    
   ];
 
-  const partners = [
-    "Referal dastur",
-    "Hamkorlik dasturi",
-    "Agentlik dasturi"
-  ];
+  
 
   const company = [
-    "Aloqa ma'lumotlari",
     "Biz haqimizda",
-    "Vakansiyalar",
-    "Вакансии"
   ];
 
   return (
@@ -100,19 +83,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Partners */}
-          <div>
-            <h3 className="text-lg font-semibold mb-4">{t('footer.partners')}</h3>
-            <ul className="space-y-2">
-              {partners.map((partner, index) => (
-                <li key={index}>
-                  <a href="#" className="text-gray-300 hover:text-white transition-colors text-sm">
-                    {partner}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
+        
 
           {/* Company */}
           <div>
@@ -137,18 +108,19 @@ const Footer = () => {
                 <Phone className="h-4 w-4 mr-2" />
                 <span>{t('support.contact.phone')}</span>
               </div>
-              <div className="flex items-center text-gray-300">
+              {/* <div className="flex items-center text-gray-300">
                 <Mail className="h-4 w-4 mr-2" />
                 <span>{t('support.contact.email')}</span>
               </div>
               <div className="flex items-center text-gray-300">
                 <MapPin className="h-4 w-4 mr-2" />
                 <span>{t('footer.country')}</span>
-              </div>
+              </div> */}
             </div>
             
-            <div className="mt-4 md:mt-0">
-              <div className="text-2xl font-bold text-blue-400">Hoomo</div>
+            <div className=" flex items-center gap-2 mt-4 md:mt-0">
+              <img className='w-8' src="/images/logo_footer.png" alt="" />
+              <div className="text-2xl font-bold text-blue-400">Hpossystem</div>
             </div>
           </div>
         </div>

@@ -1,7 +1,7 @@
 {
   "nav": {
     "solutions": "Yechimlar",
-    "why_billz": "Nima uchun Hoomo?",
+    "why_billz": "Nima uchun Hpossystem?",
     "pricing": "Narxlar",
     "resources": "Resurslar",
     "company": "Kompaniya",
@@ -87,16 +87,16 @@
     "all_features": "Barcha imkoniyatlar"
   },
   "testimonials": {
-    "title": "<0>1500</0> dan ortiq do`konlar Hoomo bilan yuzlab soat vaqtini tejamoqda, savdo hajmini oshirmoqda va o`z mijozlarining sodiqligini yaxshilamoqda.",
+    "title": "Hpossystem mijozlari <0>yuzlab soat</0> vaqtini tejamoqda, savdo hajmini oshirmoqda va o`z mijozlarining sodiqligini yaxshilamoqda.",
     "subtitle": "Savdo hajmini oshirmoqda va o'z mijozlarining sodiqligini yaxshilamoqda",
-    "media_title": "Местные и зарубежные издания пишут о Hoomo"
+    "media_title": "Местные и зарубежные издания пишут о Hpossystem"
   },
   "store_types": {
-    "title": "Hoomo <0>har qanday do`konga</0> mos keladi"
+    "title": "Hpossystem <0>har qanday do`konga</0> mos keladi"
   },
   "support": {
     "title": "<0>Sozlaymiz</0>. O'rgatamiz. Tez o'rnatib beramiz.",
-    "subtitle": "Bizning menejerlarimiz sizga tovarlarni kiritish, uskunalarni ulash, xodimlarni o'rgatishda yordam beradi, shuningdek, <0>7 kunlik</0> test foydalanish muddatini taqdim etadi!",
+    "subtitle": "Bizning menejerlarimiz sizga tovarlarni kiritish, uskunalarni ulash, xodimlarni o'rgatishda yordam beradi!",
     "paper": {
       "title": "Hisob-kitoblaringizni <0>qog'ozda yuritasizmi?</0>",
       "description": "Tovarlaringizni hisoblash, ularni tizimga kiritish, do'koningizdagi jarayonlarni avtomatlashtirish va xodimlaringizni o'rgatishda yordam beramiz.",
@@ -109,18 +109,18 @@
     },
     "contact": {
       "phone": "+998 93 337 39 20",
-      "email": "hello@hoomo.uz"
+      "email": "hello@hpossystem.uz"
     }
   },
   "questions": {
     "marquee":"Bepul yordam va qo'llab-quvvatlash • Bepul yordam va qo'llab-quvvatlash • Bepul yordam va qo'llab-quvvatlash • Bepul yordam va qo'llab-quvvatlash • Bepul yordam va qo'llab-quvvatlash • Bepul yordam va qo'llab-quvvatlash • Bepul yordam va qo'llab-quvvatlash • Bepul yordam va qo'llab-quvvatlash • Bepul yordam va qo'llab-quvvatlash • Bepul yordam va qo'llab-quvvatlash • Bepul yordam va qo'llab-quvvatlash • Bepul yordam va qo'llab-quvvatlash •"},
   "footer": {
     "solutions": "Yechimlar",
-    "why_billz": "Nima uchun Hoomo?",
+    "why_billz": "Nima uchun Hpossystem?",
     "resources": "Resurslar",
     "partners": "Hamkorlar uchun",
     "company": "Kompaniya",
-    "copyright": "© 2025 Hoomo. Barcha huquqlar himoyalangan.",
+    "copyright": "© 2025 Hpossystem. Barcha huquqlar himoyalangan.",
     "country": "O'zbekiston"
   }
 }
