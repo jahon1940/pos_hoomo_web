@@ -12,6 +12,7 @@ import type { Swiper as SwiperClass } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import AnimatedText from './AnimatedText';
 
 const Hero2 = () => {
   const { t } = useLanguage();
@@ -54,7 +55,7 @@ const Hero2 = () => {
   };
 
   return (
-    <section className="bg-white py-16 md:py-24 relative overflow-hidden">
+    <section className="bg-white py-6 md:py-8 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 items-center">
           {/* Chap tomonda matn va tugma */}
@@ -65,22 +66,29 @@ const Hero2 = () => {
             transition={{ duration: 0.8 }}
           >
             <motion.h1
+              className="text-4xl  font-bold text-gray-900 mb-6 leading-tight"
+              initial={{ y: 30, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
+            >
+              <AnimatedText /> {t("hero.title")}
+            </motion.h1>
+            {/* <motion.h1
               className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight"
               initial={{ y: 30, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
               Облачная ERP для вашего бизнеса
-            </motion.h1>
+            </motion.h1> */}
 
             <motion.p
-              className="text-lg md:text-xl text-gray-600 leading-relaxed"
+              className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed"
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.6, delay: 0.4 }}
+              transition={{ duration: 0.6, delay: 0.5 }}
             >
-              Все, что нужно для малого бизнеса в Узбекистане, — в одной системе:
-              продажи, закупки, склад, финансы и производство
+              {t("hero.subtitle")}
             </motion.p>
 
             <motion.div
@@ -94,7 +102,7 @@ const Hero2 = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                Начать работу
+                {t("hero.try_button")}
                 <ArrowRight className="ml-2 h-5 w-5" />
               </motion.button>
 
@@ -106,7 +114,7 @@ const Hero2 = () => {
                 <div className="bg-white rounded-full p-3 mr-3 shadow-md">
                   <Play className="h-6 w-6 text-blue-600" />
                 </div>
-                Смотреть демо
+                {t("hero.watch_video")}
               </motion.button>
             </motion.div>
           </motion.div>
