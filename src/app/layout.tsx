@@ -48,6 +48,9 @@ export const metadata: Metadata = {
       "Tovarlar, mijozlar, kassa, moliya va boshqa ko'p ma'lumotlarni hisobga olish - barchasi bitta oddiy va qulay dasturda",
     images: ["/favicon.png"],
   },
+  other: {
+    author: "Abbosbek Qodirov", // shu yerda yoziladi
+  },
 };
 
 
