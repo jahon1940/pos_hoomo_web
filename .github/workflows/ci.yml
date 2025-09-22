@@ -11,7 +11,14 @@ jobs:
     if: github.ref == 'refs/heads/main'
 
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v3
+
+      # Node versiyasini majburan o‘rnatamiz
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20.18.3
+
       - name: Push to prod server
         uses: appleboy/ssh-action@master
         with:
@@ -19,8 +26,6 @@ jobs:
           username: ${{ secrets.SERVER_USERNAME }}
           password: ${{ secrets.SERVER_PASSWORD }}
           script: |
-            # source ~/.nvm/nvm.sh
-            nvm use 20
             cd ${{ secrets.PROJECT_PATH }}
             git stash
             git pull origin main
@@ -28,5 +33,3 @@ jobs:
             npm install --legacy-peer-deps
             npm run build
             pm2 restart pos-next
-            
-            
