@@ -96,7 +96,7 @@ const LanguageSelect = () => {
     }),
     singleValue: (provided) => ({
       ...provided,
-      color: '#6B7280',
+      color: 'black',
       fontSize: '18px',
       fontWeight: '500',
       display: 'flex',
@@ -129,7 +129,7 @@ const LanguageSelect = () => {
         isSearchable={false}
         components={{
           DropdownIndicator: () => (
-            <div className="text-gray-500">
+            <div className="text-black">
               <svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor">
                 <path d="M6 8L2 4h8l-4 4z"/>
               </svg>

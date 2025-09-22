@@ -13,37 +13,37 @@ const Testimonials = () => {
     {
       name: "Yana Chekubash",
       position: "Pink Island do'konlari egasi",
-      content: "Hpossystem bilan mijozlarimiz soni 20% ga oshdi. Ombor logistikasi va mahsulotlarni import qilishga sarflanayotgan vaqt sezilarli darajada qisqardi. Ushbu omillarning har biri tovar aylanmasining 15% ga oshishiga ta'sir ko'rsatdi.",
+      content: "Hpos system bilan mijozlarimiz soni 20% ga oshdi. Ombor logistikasi va mahsulotlarni import qilishga sarflanayotgan vaqt sezilarli darajada qisqardi. Ushbu omillarning har biri tovar aylanmasining 15% ga oshishiga ta'sir ko'rsatdi.",
       rating: 5
     },
     {
       name: "Amir Ghouri", 
       position: "Calvin Klein brend menejeri",
-      content: "20 dan ortiq kiyim-kechak do'konlari tarmog'iga ega bo'lgan FCN Group savdo kompaniyasi savdo tahlillari, tovar qoldiqlarini samarali boshqarish va Hpossystem kompaniyasining boshqa ko'plab yechimlari yordamida faol rivojlanmoqda.",
+      content: "20 dan ortiq kiyim-kechak do'konlari tarmog'iga ega bo'lgan FCN Group savdo kompaniyasi savdo tahlillari, tovar qoldiqlarini samarali boshqarish va Hpos system kompaniyasining boshqa ko'plab yechimlari yordamida faol rivojlanmoqda.",
       rating: 5
     },
     {
       name: "Rustam Esanov",
       position: "Button do'konlari egasi", 
-      content: "Mijozlarni boshqarishning ilg'or funksionalligi, hisob-kitoblarning aniqligi va ma'lumotlar auditini Hpossystem dasturining afzalliklari qatoriga kiritishimiz mumkin. Hpossystem bizga o'z vaqtida qaror qabul qilish va do'kon uchun sarflanayotgan vaqtni tejashga yordam beradi",
+      content: "Mijozlarni boshqarishning ilg'or funksionalligi, hisob-kitoblarning aniqligi va ma'lumotlar auditini Hpos system dasturining afzalliklari qatoriga kiritishimiz mumkin. Hpos system bizga o'z vaqtida qaror qabul qilish va do'kon uchun sarflanayotgan vaqtni tejashga yordam beradi",
       rating: 5
     },
     {
       name: "Olesya Xoryakova",
       position: "Yves Rocher do'konlari boshqaruvchisi",
-      content: "Hpossystem'ning qo'llab-quvvatlash xizmatini juda ham qadrlayman. Hpossystem bilan hamkorlikni boshlaganimizdan so'ng ish jarayonimiz osonlashdi. Telegram-bot'imizni ishga tushirdik, u onlayn savdoni yo'lga qo'yishga va brend taniqliligini oshirishga yordam bermoqda.",
+      content: "Hpos system'ning qo'llab-quvvatlash xizmatini juda ham qadrlayman. Hpos system bilan hamkorlikni boshlaganimizdan so'ng ish jarayonimiz osonlashdi. Telegram-bot'imizni ishga tushirdik, u onlayn savdoni yo'lga qo'yishga va brend taniqliligini oshirishga yordam bermoqda.",
       rating: 5
     },
     {
       name: "Yuliya Pak",
       position: "Lee&Wrangler do'koni egasi",
-      content: "Hpossystem yordamida hisobotlarni tezroq olyapmiz, bu esa kelajakda talab yuqori bo'ladigan modellarni aniqlashga va yetkazib berishni o'z vaqtida rejalashtirishga yordam beradi. Bundan tashqari, Hpossystem yordamida o'g'irliklarni kamaytirdik va mijozlar sonini ko'paytirdik",
+      content: "Hpos system yordamida hisobotlarni tezroq olyapmiz, bu esa kelajakda talab yuqori bo'ladigan modellarni aniqlashga va yetkazib berishni o'z vaqtida rejalashtirishga yordam beradi. Bundan tashqari, Hpos system yordamida o'g'irliklarni kamaytirdik va mijozlar sonini ko'paytirdik",
       rating: 5
     },
     {
       name: "Galina Txay",
       position: "Pudra do'koni egasi",
-      content: "Hpossystem yordamida mijozlarga xizmat ko'rsatishni yaxshiladik, ombordagi qoldiqlarni boshqarishni osonlashtirdik, endi savdo haqidagi ma'lumotlarni istalgan joydan kuzatishimiz mumkin. Natijada faoliyatimizni kengaytirmoqdamiz.",
+      content: "Hpos system yordamida mijozlarga xizmat ko'rsatishni yaxshiladik, ombordagi qoldiqlarni boshqarishni osonlashtirdik, endi savdo haqidagi ma'lumotlarni istalgan joydan kuzatishimiz mumkin. Natijada faoliyatimizni kengaytirmoqdamiz.",
       rating: 5
     }
   ];

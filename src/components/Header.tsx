@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Menu, X, ChevronDown, Phone, ArrowRight } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import LanguageSelect from './LanguageSelect';
@@ -9,7 +9,19 @@ import Link from 'next/link';
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSolutionsOpen, setIsSolutionsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
   const { t } = useLanguage();
+
+  // Scroll event listener
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      setIsScrolled(scrollTop > 200);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const solutions = [
     t('solutions.store_management'),
@@ -32,7 +44,7 @@ const Header = () => {
   return (
     <header className="bg-white shadow-sm">
       {/* Top Bar */}
-      <div className="bg-gray-50 border-b">
+      <div className={`bg-gray-50 border-b py-3 transition-opacity duration-300 ${isScrolled ? 'opacity-0' : 'opacity-100'}`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-10 text-sm">
             <div className="flex items-center text-gray-600">
@@ -40,9 +52,11 @@ const Header = () => {
               <span className="hidden md:block ">
                 {t("nav.contact_manager")}{" "}
               </span>
-              <span className="font-semibold ml-1">{t("nav.contact_phone")}</span>
+              <span className="font-extrabold ml-2 text-black">
+                <a className='font-extrabold text-md' href="tel:+998933373920">{t("nav.contact_phone")}</a>
+              </span>
             </div>
-            <div className="flex items-center space-x-4">
+            <div className="flex items-center space-x-4 bg-white shadow-md rounded-lg py-1 px-2">
               <LanguageSelect />
             </div>
           </div>
@@ -50,7 +64,7 @@ const Header = () => {
       </div>
 
       {/* Main Navigation */}
-      <div className="bg-white">
+      <div className={`bg-white transition-all duration-500 ease-in-out ${isScrolled ? 'fixed top-0 left-0 right-0 z-50 shadow-lg animate-slideDown' : 'relative'}`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
@@ -66,7 +80,7 @@ const Header = () => {
                   </span>
                 </div>
                 <div className="text-2xl font-bold text-gray-900">
-                  Hpossystem
+                  Hpos system
                 </div>
               </div>
             </Link>
@@ -193,16 +207,30 @@ const Header = () => {
                   <button className="w-full mt-2 bg-gray-100 text-blue-600 px-4 py-2 rounded-lg hover:bg-gray-200">
                     {t("nav.get_demo")}
                   </button>
-                  <button className="w-full mt-2 text-blue-600 hover:text-blue-700 flex items-center justify-center">
-                    <span className="mr-1">{t("nav.login")}</span>
-                    <ArrowRight className="h-4 w-4" />
-                  </button>
+                  
                 </div>
               </div>
             </div>
           )}
         </div>
       </div>
+
+      <style jsx>{`
+        @keyframes slideDown {
+          from {
+            transform: translateY(-100%);
+            opacity: 0;
+          }
+          to {
+            transform: translateY(0);
+            opacity: 1;
+          }
+        }
+        
+        .animate-slideDown {
+          animation: slideDown 0.5s ease-in-out;
+        }
+      `}</style>
     </header>
   );
 };

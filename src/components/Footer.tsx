@@ -120,7 +120,7 @@ const Footer = () => {
             
             <div className=" flex items-center gap-2 mt-4 md:mt-0">
               <img className='w-8' src="/images/logo_footer.png" alt="" />
-              <div className="text-2xl font-bold text-blue-400">Hpossystem</div>
+              <div className="text-2xl font-bold text-blue-400">Hpos system</div>
             </div>
           </div>
         </div>

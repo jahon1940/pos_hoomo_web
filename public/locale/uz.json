@@ -1,7 +1,7 @@
 {
   "nav": {
     "solutions": "Yechimlar",
-    "why_billz": "Nima uchun Hpossystem?",
+    "why_billz": "Nima uchun Hpos system?",
     "pricing": "Narxlar",
     "resources": "Resurslar",
     "company": "Kompaniya",
@@ -49,6 +49,10 @@
       "electronics_desc": "Kassa tizimi",
       "household": "Uy-ro'zg'or",
       "household_desc": "Hisobotlar"
+    },
+    "notification" : {
+      "success": "Ma'lumotlaringiz jo'natildi",
+      "error" : "Nimadir xato qayta urunib ko'ring"
     }
   },
   "features": {
@@ -87,12 +91,12 @@
     "all_features": "Barcha imkoniyatlar"
   },
   "testimonials": {
-    "title": "Hpossystem mijozlari <0>yuzlab soat</0> vaqtini tejamoqda, savdo hajmini oshirmoqda va o`z mijozlarining sodiqligini yaxshilamoqda.",
+    "title": "Hpos system mijozlari <0>yuzlab soat</0> vaqtini tejamoqda, savdo hajmini oshirmoqda va o`z mijozlarining sodiqligini yaxshilamoqda.",
     "subtitle": "Savdo hajmini oshirmoqda va o'z mijozlarining sodiqligini yaxshilamoqda",
-    "media_title": "Местные и зарубежные издания пишут о Hpossystem"
+    "media_title": "Местные и зарубежные издания пишут о Hpos system"
   },
   "store_types": {
-    "title": "Hpossystem <0>har qanday do`konga</0> mos keladi"
+    "title": "Hpos system <0>har qanday do`konga</0> mos keladi"
   },
   "support": {
     "title": "<0>Sozlaymiz</0>. O'rgatamiz. Tez o'rnatib beramiz.",
@@ -113,14 +117,38 @@
     }
   },
   "questions": {
-    "marquee":"Bepul yordam va qo'llab-quvvatlash • Bepul yordam va qo'llab-quvvatlash • Bepul yordam va qo'llab-quvvatlash • Bepul yordam va qo'llab-quvvatlash • Bepul yordam va qo'llab-quvvatlash • Bepul yordam va qo'llab-quvvatlash • Bepul yordam va qo'llab-quvvatlash • Bepul yordam va qo'llab-quvvatlash • Bepul yordam va qo'llab-quvvatlash • Bepul yordam va qo'llab-quvvatlash • Bepul yordam va qo'llab-quvvatlash • Bepul yordam va qo'llab-quvvatlash •"},
+    "marquee": "Bepul yordam va qo'llab-quvvatlash • Bepul yordam va qo'llab-quvvatlash • Bepul yordam va qo'llab-quvvatlash • Bepul yordam va qo'llab-quvvatlash • Bepul yordam va qo'llab-quvvatlash • Bepul yordam va qo'llab-quvvatlash • Bepul yordam va qo'llab-quvvatlash • Bepul yordam va qo'llab-quvvatlash • Bepul yordam va qo'llab-quvvatlash • Bepul yordam va qo'llab-quvvatlash • Bepul yordam va qo'llab-quvvatlash • Bepul yordam va qo'llab-quvvatlash •"
+  },
   "footer": {
     "solutions": "Yechimlar",
-    "why_billz": "Nima uchun Hpossystem?",
+    "why_billz": "Nima uchun Hpos system?",
     "resources": "Resurslar",
     "partners": "Hamkorlar uchun",
     "company": "Kompaniya",
-    "copyright": "© 2025 Hpossystem. Barcha huquqlar himoyalangan.",
+    "copyright": "© 2025 Hpos system. Barcha huquqlar himoyalangan.",
     "country": "O'zbekiston"
+  },
+  "modal": {
+    "title": "So'rov qoldiring va menejerlarimiz siz bilan bog'lanadi",
+    "title_highlight": "So'rov qoldiring",
+    "name_label": "Ism-familiya",
+    "name_placeholder": "Ism-familiyangizni kiriting...",
+    "phone_label": "Telefon raqami",
+    "phone_placeholder": "(XX) XXX XX XX",
+    "shop_name_label": "Do'kon nomi",
+    "shop_name_placeholder": "Do'kon nomini kiriting",
+    "shop_type_label": "Do'kon turi",
+    "shop_type_placeholder": "Do'kon turini kiriting",
+    "submit_button": "So'rov yuborish",
+    "shop_types": {
+      "clothing": "Kiyim do'koni",
+      "shoes": "Poyabzal do'koni",
+      "stationery": "Kanselyariya do'koni",
+      "construction": "Qurilish mollari do'koni",
+      "cosmetics": "Kosmetika do'koni",
+      "accessories": "Aksessuarlar do'koni",
+      "electronics": "Elektronika do'koni",
+      "household": "Uy-ro'zg'or buyumlari"
+    }
   }
 }
