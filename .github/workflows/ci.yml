@@ -19,6 +19,8 @@ jobs:
           username: ${{ secrets.SERVER_USERNAME }}
           password: ${{ secrets.SERVER_PASSWORD }}
           script: |
+            source ~/.nvm/nvm.sh
+            nvm use 20
             cd ${{ secrets.PROJECT_PATH }}
             git stash
             git pull origin main
