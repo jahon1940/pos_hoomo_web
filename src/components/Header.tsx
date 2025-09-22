@@ -93,7 +93,7 @@ const Header = () => {
                   </span>
                 </div>
                 <div className="text-2xl font-bold text-gray-900">
-                  Hpos system
+                   system
                 </div>
               </div>
             </Link>
