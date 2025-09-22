@@ -20,7 +20,6 @@ jobs:
           password: ${{ secrets.SERVER_PASSWORD }}
           script: |
             cd ${{ secrets.PROJECT_PATH }}
-            
             git stash
             git pull origin main
             rm -rf .next
