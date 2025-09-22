@@ -50,9 +50,9 @@
       "household": "Uy-ro'zg'or",
       "household_desc": "Hisobotlar"
     },
-    "notification" : {
+    "notification": {
       "success": "Ma'lumotlaringiz jo'natildi",
-      "error" : "Nimadir xato qayta urunib ko'ring"
+      "error": "Nimadir xato qayta urunib ko'ring"
     }
   },
   "features": {

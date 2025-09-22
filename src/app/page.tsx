@@ -4,7 +4,6 @@ import Testimonials from '@/components/Testimonials';
 import StoreTypes from '@/components/StoreTypes';
 import Support from '@/components/Support';
 import Questions from '@/components/Questions';
-import Hero from '@/components/Hero';
 
 export default function Home() {
   return (

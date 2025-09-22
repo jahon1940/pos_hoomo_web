@@ -1,10 +1,10 @@
-'use client';
+"use client";
 
-import { useState, useEffect } from 'react';
-import { Menu, X, ChevronDown, Phone, ArrowRight } from 'lucide-react';
-import { useLanguage } from '@/contexts/LanguageContext';
-import LanguageSelect from './LanguageSelect';
-import Link from 'next/link';
+import { useState, useEffect } from "react";
+import { Menu, X, ChevronDown, Phone, ArrowRight } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
+import LanguageSelect from "./LanguageSelect";
+import Link from "next/link";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -15,36 +15,41 @@ const Header = () => {
   // Scroll event listener
   useEffect(() => {
     const handleScroll = () => {
-      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      const scrollTop =
+        window.pageYOffset || document.documentElement.scrollTop;
       setIsScrolled(scrollTop > 200);
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const solutions = [
-    t('solutions.store_management'),
-    t('solutions.clothing_store'),
-    t('solutions.shoe_store'), 
-    t('solutions.stationery_store'),
-    t('solutions.construction_store'),
-    t('solutions.cosmetics_store'),
-    t('solutions.accessories_store'),
-    t('solutions.electronics_store'),
-    t('solutions.household_store'),
-    t('solutions.start_online'),
-    t('solutions.internet_store'),
-    t('solutions.telegram_bot'),
-    t('solutions.financing'),
-    t('solutions.all_features'),
-    t('solutions.integrations')
+    t("solutions.store_management"),
+    t("solutions.clothing_store"),
+    t("solutions.shoe_store"),
+    t("solutions.stationery_store"),
+    t("solutions.construction_store"),
+    t("solutions.cosmetics_store"),
+    t("solutions.accessories_store"),
+    t("solutions.electronics_store"),
+    t("solutions.household_store"),
+    t("solutions.start_online"),
+    t("solutions.internet_store"),
+    t("solutions.telegram_bot"),
+    t("solutions.financing"),
+    t("solutions.all_features"),
+    t("solutions.integrations"),
   ];
 
   return (
     <header className="bg-white shadow-sm">
       {/* Top Bar */}
-      <div className={`bg-gray-50 border-b py-3 transition-opacity duration-300 ${isScrolled ? 'opacity-0' : 'opacity-100'}`}>
+      <div
+        className={`bg-gray-50 border-b py-3 transition-opacity duration-300 ${
+          isScrolled ? "opacity-0" : "opacity-100"
+        }`}
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-10 text-sm">
             <div className="flex items-center text-gray-600">
@@ -53,7 +58,9 @@ const Header = () => {
                 {t("nav.contact_manager")}{" "}
               </span>
               <span className="font-extrabold ml-2 text-black">
-                <a className='font-extrabold text-md' href="tel:+998933373920">{t("nav.contact_phone")}</a>
+                <a className="font-extrabold text-md" href="tel:+998933373920">
+                  {t("nav.contact_phone")}
+                </a>
               </span>
             </div>
             <div className="flex items-center space-x-4 bg-white shadow-md rounded-lg py-1 px-2">
@@ -64,7 +71,13 @@ const Header = () => {
       </div>
 
       {/* Main Navigation */}
-      <div className={`bg-white transition-all duration-500 ease-in-out ${isScrolled ? 'fixed top-0 left-0 right-0 z-50 shadow-lg animate-slideDown' : 'relative'}`}>
+      <div
+        className={`bg-white transition-all duration-500 ease-in-out ${
+          isScrolled
+            ? "fixed top-0 left-0 right-0 z-50 shadow-lg animate-slideDown"
+            : "relative"
+        }`}
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
@@ -207,7 +220,6 @@ const Header = () => {
                   <button className="w-full mt-2 bg-gray-100 text-blue-600 px-4 py-2 rounded-lg hover:bg-gray-200">
                     {t("nav.get_demo")}
                   </button>
-                  
                 </div>
               </div>
             </div>
@@ -226,7 +238,7 @@ const Header = () => {
             opacity: 1;
           }
         }
-        
+
         .animate-slideDown {
           animation: slideDown 0.5s ease-in-out;
         }
